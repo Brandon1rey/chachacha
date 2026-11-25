@@ -1,0 +1,23 @@
+# Secrets & keys - NEVER commit
+.env
+*.key
+*.pem
+
+# Databases & local output
+*.db
+*.sqlite
+*.sqlite3
+output/
+vault/
+decrypted/
+scrambled/
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+dist/
+build/

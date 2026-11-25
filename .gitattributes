@@ -1,0 +1,4 @@
+* text=auto eol=lf
+*.sh text eol=lf
+scripts/mp3-shield text eol=lf
+*.py text eol=lf

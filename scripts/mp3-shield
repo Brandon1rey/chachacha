@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# Zero-install Linux launcher for mp3-shield (uses only Python 3.10+ stdlib).
+set -euo pipefail
+
+PROJECT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+export PYTHONPATH="${PROJECT_ROOT}/src${PYTHONPATH:+:$PYTHONPATH}"
+
+if [[ -x "${PROJECT_ROOT}/.venv/bin/python" ]]; then
+  exec "${PROJECT_ROOT}/.venv/bin/python" -m mp3_shield "$@"
+else
+  exec python3 -m mp3_shield "$@"
+fi

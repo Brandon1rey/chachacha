@@ -1,0 +1,4 @@
+# Core polymorphic MP3 mutation requires ZERO third-party packages (Python 3.10+ stdlib only).
+# Optional packages for AES-256-GCM encrypted flags/vault and pytest:
+cryptography>=42.0.0
+pytest>=8.0.0
